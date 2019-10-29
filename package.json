@@ -7,5 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ryan Liu",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://shiang@github.com/shiang/react-boilerplate.git.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/shiang/react-boilerplate.git/issues"
+  },
+  "homepage": "https://github.com/shiang/react-boilerplate.git#readme"
 }
