@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ryan Liu",
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/shiang/react-boilerplate.git/issues"
   },
-  "homepage": "https://github.com/shiang/react-boilerplate.git#readme"
+  "homepage": "https://github.com/shiang/react-boilerplate.git#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  }
 }
