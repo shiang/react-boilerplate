@@ -14,9 +14,9 @@ function App() {
   }
 
   return (
-    <div>
+    <main>
       <h1>Hello World!!!</h1>
-      <div className={count > 10 ? 'warning' : null}>{count}</div>
+      <h2 className={count > 10 ? 'warning' : null}>{count}</h2>
       <button type='button' onClick={increment}>
         +
       </button>
@@ -28,7 +28,7 @@ function App() {
           <Warning />
         </React.Suspense>
       ) : null}
-    </div>
+    </main>
   )
 }
 

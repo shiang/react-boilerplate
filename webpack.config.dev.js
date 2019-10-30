@@ -6,5 +6,10 @@ module.exports = merge(baseConfig, {
   devServer: {
     port: 9000
   },
-  devtool: 'source-map'
+  devtool: 'source-map',
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom'
+    }
+  }
 })
