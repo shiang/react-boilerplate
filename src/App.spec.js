@@ -6,4 +6,8 @@ describe('App', () => {
   test('Renders without error', () => {
     render(<App />)
   })
+
+  // test('should fail', () => {
+  //   expect(true).toBe(false)
+  // })
 })
