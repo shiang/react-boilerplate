@@ -9,11 +9,10 @@ function App() {
     setCount(count + 1)
   }
 
-  const a = 'A'
-
   const decrement = () => {
     setCount(count - 1)
   }
+
   return (
     <div>
       <h1>Hello World!!!</h1>
