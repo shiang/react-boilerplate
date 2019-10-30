@@ -13,7 +13,8 @@ module.exports = {
 	},
 	'extends': [
 		'eslint:recommended',
-		'plugin:react/recommended'
+		'plugin:react/recommended',
+		'plugin:jsx-a11y/recommended'
 	],
 	'globals': {
 		'Atomics': 'readonly',
@@ -28,7 +29,8 @@ module.exports = {
 	},
 	'plugins': [
 		'react',
-		'react-hooks'
+		'react-hooks',
+		'jsx-a11y'
 	],
 	'rules': {
 		"no-unused-vars": [

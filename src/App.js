@@ -9,6 +9,8 @@ function App() {
     setCount(count + 1)
   }
 
+  const a = 'A'
+
   const decrement = () => {
     setCount(count - 1)
   }
