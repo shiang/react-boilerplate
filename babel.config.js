@@ -16,6 +16,7 @@ module.exports = api => {
     plugins: [
       'react-hot-loader/babel',
       '@babel/plugin-proposal-class-properties',
+      '@babel/proposal-object-rest-spread',
       isTest ? 'dynamic-import-node' : '@babel/plugin-syntax-dynamic-import'
     ]
   }

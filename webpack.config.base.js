@@ -15,9 +15,12 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-        exclude: /node_modules/
+        test: /\.(png|jpg|gif)$/i,
+        use: [{ loader: 'url-loader', options: { limit: 5000 } }]
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
       }
     ]
   },
