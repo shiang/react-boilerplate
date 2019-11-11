@@ -16,5 +16,9 @@ module.exports = {
     '\\.(css|less)$': 'identity-obj-proxy'
   },
   setupFilesAfterEnv: ['<rootDir>/testSetup.js'],
-  setupFiles: ['dotenv/config']
+  setupFiles: ['dotenv/config'],
+  watchPlugins: [
+    'jest-watch-typeahead/filename',
+    'jest-watch-typeahead/testname'
+  ]
 }
