@@ -16,7 +16,9 @@ function App() {
   return (
     <main>
       <h1>Hello World!!!</h1>
-      <h2 className={count > 10 ? 'warning' : null}>{count}</h2>
+      <h2 data-testid='count' className={count > 10 ? 'warning' : null}>
+        {count}
+      </h2>
       <button type='button' onClick={increment}>
         +
       </button>
