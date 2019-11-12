@@ -11,30 +11,12 @@
     "test:watch": "jest --watch",
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
     "format": "pretty-quick",
-    "lint": "eslint ./"
+    "lint": "jest --config test/jest.lint.js"
   },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged && npm run lint && npm run test"
     }
-  },
-  "jest": {
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}",
-      "!**/node_modules/**",
-      "!**/__tests__/**",
-      "!src/testing-utils/**"
-    ],
-    "coverageReporters": [
-      "text",
-      "text-summary"
-    ],
-    "projects": [
-      "./test/jest.lint.js",
-      "./test/jest.testing.js",
-      "./test/jest.tsc.js"
-    ]
   },
   "author": "Ryan Liu",
   "license": "ISC",
@@ -73,6 +55,7 @@
     "isomorphic-fetch": "^2.2.1",
     "jest": "^24.9.0",
     "jest-runner-eslint": "^0.7.5",
+    "jest-watch-select-projects": "^1.0.0",
     "jest-watch-typeahead": "^0.4.2",
     "mini-css-extract-plugin": "^0.8.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",

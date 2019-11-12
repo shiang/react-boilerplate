@@ -8,7 +8,12 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(js|ts)x?$',
   collectCoverage: true,
-  collectCoverageFrom: ['./src/**/*.{js,jsx}', '!**/node_modules/**'],
+  collectCoverageFrom: [
+    './src/**/*.{js,jsx}',
+    '!**/node_modules/**',
+    '!**/__tests__/**',
+    '!src/testing-utils/**'
+  ],
   coverageReporters: ['text', 'text-summary'],
   moduleNameMapper: {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
@@ -19,6 +24,9 @@ module.exports = {
   setupFiles: ['dotenv/config'],
   watchPlugins: [
     'jest-watch-typeahead/filename',
-    'jest-watch-typeahead/testname'
-  ]
+    'jest-watch-typeahead/testname',
+    'jest-watch-select-projects',
+    'jest-runner-eslint/watch-fix'
+  ],
+  projects: ['./test/jest.lint.js']
 }
